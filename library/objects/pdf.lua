@@ -7,11 +7,9 @@ local pdf = {}
 ---
 ---@param pdf binary
 ---@return PDF
-function PDF(pdf)
-end
+function PDF(pdf) end
 
 ---**Converts a PDF document to plain text**
 ---
 ---@return string
-function pdf:text()
-end
+function pdf:text() end

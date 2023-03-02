@@ -6,8 +6,7 @@ local connection = {}
 ---**Creates an HTTPS connection to a web server**
 ---
 ---@return Connection
-function Connection()
-end
+function Connection() end
 
 ---**Requests a resource from a web server**
 ---
@@ -44,8 +43,7 @@ end
 ---@return string mimeType MIME type of the body (from headers and `<meta>` tags in the HTML code)
 ---@return string filename Filename from the HTTP response header `Content-Disposition`
 ---@return table<string, string> headers HTTP response headers
-function connection:request(method, url, postContent, postContentType, headers)
-end
+function connection:request(method, url, postContent, postContentType, headers) end
 
 ---**Requests a resource from a web server with a `GET` request**
 ---
@@ -54,8 +52,7 @@ end
 ---@return binary content Response body
 ---@return string charset Charset of the body (from headers and `<meta>` tags in the HTML code)
 ---@return string mimeType MIME type of the body (from headers and `<meta>` tags in the HTML code)
-function connection:get(url)
-end
+function connection:get(url) end
 
 ---**Requests a resource from a web server with a `POST` request**
 ---
@@ -66,21 +63,18 @@ end
 ---@return binary content Response body
 ---@return string charset Charset of the body (from headers and `<meta>` tags in the HTML code)
 ---@return string mimeType MIME type of the body (from headers and `<meta>` tags in the HTML code)
-function connection:post(url, postContent, postContentType)
-end
+function connection:post(url, postContent, postContentType) end
 
 ---**Closes the HTTP connection to the server**
 ---
 ---It is generally not required to call this method because all
 ---open connections are automatically closed after the script execution.
-function connection:close()
-end
+function connection:close() end
 
 ---**Returns the last requested URL**
 ---
 ---@return string url
-function connection:getBaseURL()
-end
+function connection:getBaseURL() end
 
 ---**Sets a cookie in the current connection**
 ---
@@ -97,16 +91,14 @@ end
 ---```
 ---
 ---@param cookie string Formatted like the `Set-Cookie` HTTP header
-function connection:setCookie(cookie)
-end
+function connection:setCookie(cookie) end
 
 ---**Gets all cookies from the current connection**
 ---
 ---The stored cookies are filtered by the last requested URL.
 ---
 ---@return string cookies Formatted like the `Cookies` HTTP header
-function connection:getCookies()
-end
+function connection:getCookies() end
 
 ---**Value of the `User-Agent` HTTP header**
 ---
@@ -119,7 +111,7 @@ end
 ---```
 ---
 ---@type string
-connection.useragent = nil;
+connection.useragent = nil
 
 ---**Value of the `Accept-Language` HTTP header**
 ---
@@ -132,4 +124,4 @@ connection.useragent = nil;
 ---```
 ---
 ---@type string
-connection.language = nil;
+connection.language = nil

@@ -3,17 +3,14 @@
 ---**Registers an export extension**
 ---
 ---@param params ExporterParams
-function Exporter(params)
-end
+function Exporter(params) end
 
 ---**Registers an import extension**
 ---
 ---@param params ImporterParams
-function Importer(params)
-end
+function Importer(params) end
 
 ---**Registers a web banking extension**
 ---
 ---@param params WebBankingParams
-function WebBanking(params)
-end
+function WebBanking(params) end

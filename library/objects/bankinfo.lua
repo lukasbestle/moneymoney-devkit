@@ -4,5 +4,4 @@
 ---
 ---@param bankCode string
 ---@return BankInfo
-function BankInfo(bankCode)
-end
+function BankInfo(bankCode) end
